@@ -10,14 +10,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.PruebaCeiba.AppBarOverlay">
+        android:theme="@style/Theme.Ceiba_test.NoActionBar">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.PruebaCeiba.PopupOverlay" />
+            app:popupTheme="@style/Theme.Ceiba_test" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

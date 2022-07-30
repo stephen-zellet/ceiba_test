@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="150dp">
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="This is my title"
+        android:textColor="#1E90FF	"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum has been the industry's standard
+         dummy text ever since the 1500s, when an
+         unknown printer took a galley of type and
+         scrambled it to make a type specimen book."
+        android:textSize="16sp"
+        android:textColor="#87CEEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title"
+        app:layout_constraintVertical_bias="0.04000002"
+        tools:layout_editor_absoluteX="52dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
