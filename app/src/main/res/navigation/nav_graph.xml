@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.ceiba_test.feature.user.ui.views.UsersFragment"
+        android:label="@string/user_fragment_label"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.ceiba_test.feature.post.ui.views.PostFragment"
+        android:label="@string/post_fragment_label"
+        tools:layout="@layout/fragment_post">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.pruebaceiba.feature.user.ui.models.ItemUser" />
+    </fragment>
+</navigation>
