@@ -25,6 +25,6 @@
             app:destination="@id/FirstFragment" />
         <argument
             android:name="user"
-            app:argType="com.example.pruebaceiba.feature.user.ui.models.ItemUser" />
+            app:argType="com.example.ceiba_test.feature.user.ui.models.ItemUser" />
     </fragment>
 </navigation>
